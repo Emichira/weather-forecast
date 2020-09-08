@@ -1,0 +1,61 @@
+html,
+body {
+    height: 100vh;
+    background: url(./img/raindrops.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background: #C33764;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(./img/raindrops.webp);
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(./img/raindrops.webp);
+    /* The least supported option. */
+}
+
+/* navbar header section */
+.header {
+    background-color: #3a4058;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 1.4em 1em 1.5em 1em;
+    line-height: 2em;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.45em;
+}
+
+.search {
+    font-size: 17px;
+    background-color: #fff;
+    color: red;
+}
+
+.header .search button {
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+}
+
+.header input {
+    font-size: 17px;
+    border: none;
+    background: #fff;
+}
+
+.search-icon {
+    color: #000000;
+    padding-left: 0.5em;
+}
+
+/* end navbar header section */
+
+/* Main section */
+.main-sec {
+
+}
+
+
+/* End main section */
