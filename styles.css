@@ -1,11 +1,19 @@
 html,
 body {
-    height: 100vh;
+    height: max-content;
+    background-repeat: no-repeat;
+    background: #000000;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(bottom left, #000000, #004E92);
+    background: -moz-linear-gradient(bottom left, #000000, #004E92);
+    background: linear-gradient(to top right, #000000, #004E92);
+    /* The least supported option. */
 }
 
 /* Global classes */
 .center {
     align-self: center;
+    text-align: center;
 }
 
 .p-all-1 {
@@ -23,48 +31,34 @@ body {
 }
 
 .nyeupe {
-    color: #fff;
+    color: #ffffff;
 }
 
-.fontsize {
+.font-larger {
     font-size: larger;
 }
+
+.font-large {
+    font-size: large;
+}
+
+.font-title {
+    font-size: xx-large;
+}
+
 /* End Global classes */
 /* navbar header section */
 .header {
-    background-color: #3a4058;
+    background-color: #000428;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1.4rem 1rem 1.5rem 1rem;
+    line-height: 0.45rem;
 }
 
 .logo {
-    color: #fff;
-    font-size: 1.45rem;
-}
-
-.search {
-    font-size: 18px;
-    background-color: #fff;
-    padding: 0.4rem;
-}
-
-.header .search button {
-    cursor: pointer;
-    background: transparent;
-    color: #fff;
-}
-
-.header input {
-    font-size: 17px;
-    border: none;
-    background: #fff;
-}
-
-.search-icon {
-    color: #000000;
-    padding-left: 0.5rem;
+    color: #ffffff;
+    font-size: x-large;
 }
 
 /* end navbar header section */
@@ -72,14 +66,44 @@ body {
 /* Main section */
 .main-sec {
     padding: 1rem;
-    height: 100vh;
-    background: #C33764;
-    background-repeat: no-repeat;
-    /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(./img/raindrops.webp);
-    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(./img/raindrops.webp);
-    /* The least supported option. */
 }
+
+.search {
+    margin: auto;
+    max-width: 500px;
+    padding: 0.4rem;
+    display: flex;
+    box-sizing: border-box;
+}
+
+form.search input {
+    padding: 10px;
+    font-size: large;
+    border: 1px solid grey;
+    width: 70%;
+    background: #ffffff;
+}
+
+form.search button {
+    width: 30%;
+    padding: 10px;
+    background-color: #48484a;
+    color: #ffffff;
+    font-size: large;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.search button:hover {
+    background: #0b7dda;
+}
+
+form.search::after {
+    content: "";
+    clear: both;
+}
+
 .weather-container {
     padding: 1rem;
     display: flex;
@@ -90,32 +114,52 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .box {
-    min-width: 13rem;
+    max-width: 30rem;
+    min-width: 16rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.weekly-forecast {
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .flexybox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .tempreture {
-    font-size: 36px;
+    font-size: xxx-large;
+}
+
+.weekly-forecast {
+    padding: 0.4rem;
+}
+
+.weekly-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.daily-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: large;
+}
+
+.daily-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
 }
 /* End main section */

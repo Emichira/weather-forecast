@@ -8,35 +8,34 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-    <title>Weather App Forecast</title>
+    <title>Smash IT ~ Forecast</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <!-- Header Section -->
     <header class="header">
-        <div class="logo">Forecast</div>
-        <div class="search">
-            <form action="">
-                <input class="search-input" type="text" name="search" value="" placeholder="Search city">
-            </form>
-        </div>
+        <span class="logo">Smash IT Forecast</span>
     </header>
     <!-- End Header Section -->
     <!-- Main Section -->
     <section class="main-sec">
+        <form class="search" action="">
+            <input type="text" placeholder="Search city" name="search2">
+            <button class="button" type="submit">Search</button>
+        </form>
         <div class="weather-container nyeupe">
             <div class="box center">
                 <div class="location-block center">
-                    <h3>Nakuru, Kenya</h3>
+                    <h3 class="font-title">Nakuru, Kenya</h3>
                 </div>
                 <div class="weather-info center">
                     <img src="https://openweathermap.org/img/wn/10d@2x.png" class="weather-icon">
                     <span class="tempreture">16 0 C</span>
                 </div>
-                    <span class="center p-tb-1 fontsize">Rain</span>
-                    <span class="center p-tb-1 fontsize">Updated as of 11:23 AM</span>
-                <div class="flexybox p-tb-1">
+                <span class="center p-tb-1 font-larger">Rain</span>
+                <span class="center p-tb-1 font-larger">Updated as of 11:23 AM</span>
+                <div class="flexybox p-tb-1 font-large">
                     <div>Feels Like 35</div>
                     <div>Wind</div>
                     <div>Visibilty</div>
@@ -44,10 +43,99 @@
             </div>
         </div>
         <div class="weekly-forecast nyeupe">
-            <h3>Weekly Forecast</h3>
+            <h3 class="font-title center">Weekly Forecast</h3>
+            <section class="weekly-card">
+                <div class="daily-card">
+                    <div>Date</div>
+                    <div class="weather-image"><img class="weather-icon"
+                            src="https://openweathermap.org/img/wn/10d@2x.png">
+                    </div>
+                    <div class="">
+                        <div>16o C</div>
+                        <div>Wind</div>
+                    </div>
+                    <div>T-Storms</div>
+                </div>
+                <div class="daily-card">
+                    <div>Date</div>
+                    <div class="weather-image"><img class="weather-icon"
+                            src="https://openweathermap.org/img/wn/10d@2x.png">
+                    </div>
+                    <div class="">
+                        <div>16o C</div>
+                        <div>Wind</div>
+                    </div>
+                    <div>T-Storms</div>
+                </div>
+                <div class="daily-card">
+                    <div>Date</div>
+                    <div class="weather-image"><img class="weather-icon"
+                            src="https://openweathermap.org/img/wn/10d@2x.png">
+                    </div>
+                    <div class="">
+                        <div>16o C</div>
+                        <div>Wind</div>
+                    </div>
+                    <div>T-Storms</div>
+                </div>
+                <div class="daily-card">
+                    <div>Date</div>
+                    <div class="weather-image"><img class="weather-icon"
+                            src="https://openweathermap.org/img/wn/10d@2x.png">
+                    </div>
+                    <div class="">
+                        <div>16o C</div>
+                        <div>Wind</div>
+                    </div>
+                    <div>T-Storms</div>
+                </div>
+                <div class="daily-card">
+                    <div>Date</div>
+                    <div class="weather-image"><img class="weather-icon"
+                            src="https://openweathermap.org/img/wn/10d@2x.png">
+                    </div>
+                    <div class="">
+                        <div>16o C</div>
+                        <div>Wind</div>
+                    </div>
+                    <div>T-Storms</div>
+                </div>
+                <div class="daily-card">
+                    <div>Date</div>
+                    <div class="weather-image"><img class="weather-icon"
+                            src="https://openweathermap.org/img/wn/10d@2x.png">
+                    </div>
+                    <div class="">
+                        <div>16o C</div>
+                        <div>Wind</div>
+                    </div>
+                    <div>T-Storms</div>
+                </div>
+                <div class="daily-card">
+                    <div>Date</div>
+                    <div class="weather-image"><img class="weather-icon"
+                            src="https://openweathermap.org/img/wn/10d@2x.png">
+                    </div>
+                    <div class="">
+                        <div>16o C</div>
+                        <div>Wind</div>
+                    </div>
+                    <div>T-Storms</div>
+                </div>
+                <div class="daily-card">
+                    <div>Date</div>
+                    <div class="weather-image"><img class="weather-icon"
+                            src="https://openweathermap.org/img/wn/10d@2x.png">
+                    </div>
+                    <div class="">
+                        <div>16o C</div>
+                        <div>Wind</div>
+                    </div>
+                    <div>T-Storms</div>
+                </div>
+            </section>
         </div>
     </section>
-
     <!-- End Main Section -->
 
     <!-- Optional JavaScript -->
