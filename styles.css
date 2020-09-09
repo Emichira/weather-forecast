@@ -1,36 +1,53 @@
 html,
 body {
     height: 100vh;
-    background: url(./img/raindrops.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background: #C33764;
-    /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(./img/raindrops.webp);
-    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(./img/raindrops.webp);
-    /* The least supported option. */
 }
 
+/* Global classes */
+.center {
+    align-self: center;
+}
+
+.p-all-1 {
+    padding: 1rem;
+}
+
+.p-lr-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.p-tb-1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.nyeupe {
+    color: #fff;
+}
+
+.fontsize {
+    font-size: larger;
+}
+/* End Global classes */
 /* navbar header section */
 .header {
     background-color: #3a4058;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 1.4em 1em 1.5em 1em;
-    line-height: 2em;
+    padding: 1.4rem 1rem 1.5rem 1rem;
 }
 
 .logo {
     color: #fff;
-    font-size: 1.45em;
+    font-size: 1.45rem;
 }
 
 .search {
-    font-size: 17px;
+    font-size: 18px;
     background-color: #fff;
-    color: red;
+    padding: 0.4rem;
 }
 
 .header .search button {
@@ -47,15 +64,58 @@ body {
 
 .search-icon {
     color: #000000;
-    padding-left: 0.5em;
+    padding-left: 0.5rem;
 }
 
 /* end navbar header section */
 
 /* Main section */
 .main-sec {
-
+    padding: 1rem;
+    height: 100vh;
+    background: #C33764;
+    background-repeat: no-repeat;
+    /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(./img/raindrops.webp);
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(./img/raindrops.webp);
+    /* The least supported option. */
+}
+.weather-container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
+.weather-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.box {
+    min-width: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weekly-forecast {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flexybox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tempreture {
+    font-size: 36px;
+}
 /* End main section */

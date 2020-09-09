@@ -10,8 +10,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
     <title>Weather App Forecast</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,15 +18,34 @@
         <div class="logo">Forecast</div>
         <div class="search">
             <form action="">
-                <i class="fa fa-search search-icon"></i>
-                <input class="" type="text" name="search" value="" placeholder="Search city">
+                <input class="search-input" type="text" name="search" value="" placeholder="Search city">
             </form>
         </div>
     </header>
     <!-- End Header Section -->
     <!-- Main Section -->
     <section class="main-sec">
-        
+        <div class="weather-container nyeupe">
+            <div class="box center">
+                <div class="location-block center">
+                    <h3>Nakuru, Kenya</h3>
+                </div>
+                <div class="weather-info center">
+                    <img src="https://openweathermap.org/img/wn/10d@2x.png" class="weather-icon">
+                    <span class="tempreture">16 0 C</span>
+                </div>
+                    <span class="center p-tb-1 fontsize">Rain</span>
+                    <span class="center p-tb-1 fontsize">Updated as of 11:23 AM</span>
+                <div class="flexybox p-tb-1">
+                    <div>Feels Like 35</div>
+                    <div>Wind</div>
+                    <div>Visibilty</div>
+                </div>
+            </div>
+        </div>
+        <div class="weekly-forecast nyeupe">
+            <h3>Weekly Forecast</h3>
+        </div>
     </section>
 
     <!-- End Main Section -->
