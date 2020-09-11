@@ -108,6 +108,8 @@ if ("serviceWorker" in navigator) {
 // Add to home screen implementation
 // Listen for beforeinstallprompt
 let deferredPrompt;
+const addBtn = document.querySelector('.addBtn');
+addBtn.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
     // Prevent the mini-infobar from appearing on mobile
@@ -118,7 +120,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
     showInstallPromotion();
 });
 
-buttonInstall.addEventListener('click', (e) => {
+addBtn.addEventListener('click', (e) => {
     // Hide the app provided install promotion
     hideMyInstallPromotion();
     // Show the install prompt
