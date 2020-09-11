@@ -6,18 +6,34 @@ const api = {
     base: "https://api.openweathermap.org/data/2.5/"
 }
 
-//querying data via search button
+// local storage array to store weather results
+let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
+console.log(searchHistory);
+
+// persist weather results through local storage
+if (localStorage.getItem("search")) {
+    let data = searchHistory.slice(-1);
+    getResponse(data);
+}
+
+//querying data submitted via search button
 document.querySelector("button").addEventListener("click", function () {
+    let searchTag = searchQuery.value;
     getResponse(searchQuery.value);
+    searchHistory.push(searchTag);
+    localStorage.setItem("search", JSON.stringify(searchHistory));
 });
 
 //querying data via search input form
 const searchQuery = document.querySelector('.search-query');
 searchQuery.addEventListener('keypress', search);
 
-function search(enterKeyEvent) {
-    if (enterKeyEvent.keyCode == 13) {
-        getResponse(searchQuery.value);
+function search(searchEvent) {
+    if (searchEvent.keyCode == 13) {
+        const searchTag = searchQuery.value;
+        getResponse(searchTag);
+        searchHistory.push(searchTag);
+        localStorage.setItem("search", JSON.stringify(searchHistory));
     }
 }
 
@@ -32,13 +48,13 @@ function getResponse(query) {
 //display response
 function displayResults(weather) {
     if (weather.cod === '404') {
-        console.log(weather);
+        // console.log(weather);
         let city = document.querySelector('.location');
         city.innerText = `Data unavailable`;
         let x = document.getElementById("hide");
         x.style.display = "none"; //hide.
     }
-    console.log(weather);
+    // console.log(weather);
     let city = document.querySelector('.location');
     city.innerText = `${weather.name}, ${weather.sys.country}`;
 
