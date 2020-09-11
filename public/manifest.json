@@ -3,20 +3,8 @@
     "name": "Smash IT Forecast",
     "description": "Weather forecast information for Smash IT",
     "icons": [{
-        "src": "/icons/icon-128x128.png",
+        "src": "img/web-manifest/pwa-512x512.png",
         "sizes": "128x128",
-        "type": "image/png"
-    }, {
-        "src": "/icons/icon-144x144.png",
-        "sizes": "144x144",
-        "type": "image/png"
-    }, {
-        "src": "/icons/icon-152x152.png",
-        "sizes": "152x152",
-        "type": "image/png"
-    }, {
-        "src": "/icons/icon-192x192.png",
-        "sizes": "192x192",
         "type": "image/png"
     }],
     "start_url": "./index.html",
