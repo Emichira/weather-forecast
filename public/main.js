@@ -107,6 +107,8 @@ if ("serviceWorker" in navigator) {
 
 // Listen for beforeinstallprompt
 let deferredPrompt;
+const addBtn = document.querySelector('.add-button');
+addBtn.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
     // Stash the event so it can be triggered later.
