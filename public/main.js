@@ -8,7 +8,6 @@ const api = {
 
 // local storage array to store weather results
 let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
-console.log(searchHistory);
 
 // persist weather results through local storage
 if (localStorage.getItem("search")) {
