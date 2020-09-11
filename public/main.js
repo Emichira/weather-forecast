@@ -105,8 +105,8 @@ if ("serviceWorker" in navigator) {
     })
 }
 
+// Add to home screen implementation
 // Listen for beforeinstallprompt
-
 let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
