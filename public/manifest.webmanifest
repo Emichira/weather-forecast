@@ -19,10 +19,6 @@
         "type": "image/png",
         "sizes": "128x128"
     }, {
-        "src": "./img/web-manifest/android-72x72.png",
-        "type": "image/png",
-        "sizes": "144x144"
-    }, {
         "src": "./img/web-manifest/android-96x196.png",
         "type": "image/png",
         "sizes": "152x152"
