@@ -1,13 +1,9 @@
 html,
 body {
-    height: max-content;
+    background-position: top center;
+    background-image: url('./img/rain.webp');
     background-repeat: no-repeat;
-    background: #000000;
-    /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(bottom left, #000000, #004E92);
-    background: -moz-linear-gradient(bottom left, #000000, #004E92);
-    background: linear-gradient(to top right, #000000, #004E92);
-    /* The least supported option. */
+    background-size: cover;
 }
 
 /* Global classes */
@@ -76,15 +72,16 @@ body {
     box-sizing: border-box;
 }
 
-form.search input {
+.search input {
     padding: 10px;
     font-size: large;
     border: 1px solid grey;
     width: 70%;
     background: #ffffff;
+    transition: 0.2s ease-out;
 }
 
-form.search button {
+.search button {
     width: 30%;
     padding: 10px;
     background-color: #48484a;
@@ -95,14 +92,17 @@ form.search button {
     cursor: pointer;
 }
 
-form.search button:hover {
+.search button:hover {
     background: #0b7dda;
 }
 
-form.search::after {
-    content: "";
-    clear: both;
+.search input:focus {
+    background-color: rgba(255, 255, 255, 0.6);
 }
+
+/* #hide {
+    display: none;
+} */
 
 .weather-container {
     padding: 1rem;
@@ -127,12 +127,13 @@ form.search::after {
 .flexybox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: space-evenly;
+    gap: 12px;
 }
 
-.tempreture {
+.temp {
     font-size: xxx-large;
+    font-weight: bolder;
 }
 
 .weekly-forecast {
@@ -162,4 +163,5 @@ form.search::after {
     width: 100px;
     height: 100px;
 }
+
 /* End main section */

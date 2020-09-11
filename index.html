@@ -20,120 +20,124 @@
     <!-- End Header Section -->
     <!-- Main Section -->
     <section class="main-sec">
-        <form class="search" action="">
-            <input type="text" placeholder="Search city" name="search2">
-            <button class="button" type="submit">Search</button>
-        </form>
-        <div class="weather-container nyeupe">
-            <div class="box center">
-                <div class="location-block center">
-                    <h3 class="font-title">Nakuru, Kenya</h3>
-                </div>
-                <div class="weather-info center">
-                    <img src="https://openweathermap.org/img/wn/10d@2x.png" class="weather-icon">
-                    <span class="tempreture">16 0 C</span>
-                </div>
-                <span class="center p-tb-1 font-larger">Rain</span>
-                <span class="center p-tb-1 font-larger">Updated as of 11:23 AM</span>
-                <div class="flexybox p-tb-1 font-large">
-                    <div>Feels Like 35</div>
-                    <div>Wind</div>
-                    <div>Visibilty</div>
+        <div class="search" action="">
+            <input type="text" class="search-query" onfocus="this.value=''" placeholder="Search city">
+            <button class="button">Search</button>
+        </div>
+        <div id="hide">
+            <div class="weather-container nyeupe">
+                <div class="box center">
+                    <div class="location-block center">
+                        <h3 class="font-title location">Search Weather Information</h3>
+                    </div>
+                    <div class="weather-info center">
+                        <span class="weather-icon"></span>
+                        <!-- <img src="https://openweathermap.org/img/wn/10d@2x.png" class="weather-icon"> -->
+                        <span class="temp"></span>
+                    </div>
+                    <span class="center p-tb-1 font-larger main"></span>
+                    <span class="center p-tb-1 font-larger description"></span>
+                    <span class="date center p-tb-1 font-larger"></span>
+                    <div class="flexybox p-tb-1 font-large">
+                        <div class="feels"></div>
+                        <div class="humidity"></div>
+                        <div class="visibility"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="weekly-forecast nyeupe">
-            <h3 class="font-title center">Weekly Forecast</h3>
-            <section class="weekly-card">
-                <div class="daily-card">
-                    <div>Date</div>
-                    <div class="weather-image"><img class="weather-icon"
-                            src="https://openweathermap.org/img/wn/10d@2x.png">
+            <div class="weekly-forecast nyeupe">
+                <h3 class="font-title center">Weekly Forecast</h3>
+                <section class="weekly-card">
+                    <div class="daily-card">
+                        <div>Date</div>
+                        <div class="weather-image"><img class="weather-icon"
+                                src="https://openweathermap.org/img/wn/10d@2x.png">
+                        </div>
+                        <div class="">
+                            <div>16o C</div>
+                            <div>Wind</div>
+                        </div>
+                        <div>T-Storms</div>
                     </div>
-                    <div class="">
-                        <div>16o C</div>
-                        <div>Wind</div>
+                    <div class="daily-card">
+                        <div>Date</div>
+                        <div class="weather-image"><img class="weather-icon"
+                                src="https://openweathermap.org/img/wn/10d@2x.png">
+                        </div>
+                        <div class="">
+                            <div>16o C</div>
+                            <div>Wind</div>
+                        </div>
+                        <div>T-Storms</div>
                     </div>
-                    <div>T-Storms</div>
-                </div>
-                <div class="daily-card">
-                    <div>Date</div>
-                    <div class="weather-image"><img class="weather-icon"
-                            src="https://openweathermap.org/img/wn/10d@2x.png">
+                    <div class="daily-card">
+                        <div>Date</div>
+                        <div class="weather-image"><img class="weather-icon"
+                                src="https://openweathermap.org/img/wn/10d@2x.png">
+                        </div>
+                        <div class="">
+                            <div>16o C</div>
+                            <div>Wind</div>
+                        </div>
+                        <div>T-Storms</div>
                     </div>
-                    <div class="">
-                        <div>16o C</div>
-                        <div>Wind</div>
+                    <div class="daily-card">
+                        <div>Date</div>
+                        <div class="weather-image"><img class="weather-icon"
+                                src="https://openweathermap.org/img/wn/10d@2x.png">
+                        </div>
+                        <div class="">
+                            <div>16o C</div>
+                            <div>Wind</div>
+                        </div>
+                        <div>T-Storms</div>
                     </div>
-                    <div>T-Storms</div>
-                </div>
-                <div class="daily-card">
-                    <div>Date</div>
-                    <div class="weather-image"><img class="weather-icon"
-                            src="https://openweathermap.org/img/wn/10d@2x.png">
+                    <div class="daily-card">
+                        <div>Date</div>
+                        <div class="weather-image"><img class="weather-icon"
+                                src="https://openweathermap.org/img/wn/10d@2x.png">
+                        </div>
+                        <div class="">
+                            <div>16o C</div>
+                            <div>Wind</div>
+                        </div>
+                        <div>T-Storms</div>
                     </div>
-                    <div class="">
-                        <div>16o C</div>
-                        <div>Wind</div>
+                    <div class="daily-card">
+                        <div>Date</div>
+                        <div class="weather-image"><img class="weather-icon"
+                                src="https://openweathermap.org/img/wn/10d@2x.png">
+                        </div>
+                        <div class="">
+                            <div>16o C</div>
+                            <div>Wind</div>
+                        </div>
+                        <div>T-Storms</div>
                     </div>
-                    <div>T-Storms</div>
-                </div>
-                <div class="daily-card">
-                    <div>Date</div>
-                    <div class="weather-image"><img class="weather-icon"
-                            src="https://openweathermap.org/img/wn/10d@2x.png">
+                    <div class="daily-card">
+                        <div>Date</div>
+                        <div class="weather-image"><img class="weather-icon"
+                                src="https://openweathermap.org/img/wn/10d@2x.png">
+                        </div>
+                        <div class="">
+                            <div>16o C</div>
+                            <div>Wind</div>
+                        </div>
+                        <div>T-Storms</div>
                     </div>
-                    <div class="">
-                        <div>16o C</div>
-                        <div>Wind</div>
+                    <div class="daily-card">
+                        <div>Date</div>
+                        <div class="weather-image"><img class="weather-icon"
+                                src="https://openweathermap.org/img/wn/10d@2x.png">
+                        </div>
+                        <div class="">
+                            <div>16o C</div>
+                            <div>Wind</div>
+                        </div>
+                        <div>T-Storms</div>
                     </div>
-                    <div>T-Storms</div>
-                </div>
-                <div class="daily-card">
-                    <div>Date</div>
-                    <div class="weather-image"><img class="weather-icon"
-                            src="https://openweathermap.org/img/wn/10d@2x.png">
-                    </div>
-                    <div class="">
-                        <div>16o C</div>
-                        <div>Wind</div>
-                    </div>
-                    <div>T-Storms</div>
-                </div>
-                <div class="daily-card">
-                    <div>Date</div>
-                    <div class="weather-image"><img class="weather-icon"
-                            src="https://openweathermap.org/img/wn/10d@2x.png">
-                    </div>
-                    <div class="">
-                        <div>16o C</div>
-                        <div>Wind</div>
-                    </div>
-                    <div>T-Storms</div>
-                </div>
-                <div class="daily-card">
-                    <div>Date</div>
-                    <div class="weather-image"><img class="weather-icon"
-                            src="https://openweathermap.org/img/wn/10d@2x.png">
-                    </div>
-                    <div class="">
-                        <div>16o C</div>
-                        <div>Wind</div>
-                    </div>
-                    <div>T-Storms</div>
-                </div>
-                <div class="daily-card">
-                    <div>Date</div>
-                    <div class="weather-image"><img class="weather-icon"
-                            src="https://openweathermap.org/img/wn/10d@2x.png">
-                    </div>
-                    <div class="">
-                        <div>16o C</div>
-                        <div>Wind</div>
-                    </div>
-                    <div>T-Storms</div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     </section>
     <!-- End Main Section -->
