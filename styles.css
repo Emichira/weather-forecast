@@ -1,5 +1,6 @@
 html,
 body {
+    height: 100vh;
     background-position: top center;
     background-image: url('./img/rain.webp');
     background-repeat: no-repeat;

@@ -1,3 +1,5 @@
+'use strict';
+
 //api settings
 const api = {
     key: "38e06b7ee23bea88a02bf79ab15848b3",
@@ -76,4 +78,14 @@ function dateBuilder(d) {
     let year = d.getFullYear();
 
     return `${day} ${date} ${month} ${year}`;
+}
+
+// Register service worker
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+        navigator.serviceWorker
+            .register("./serviceWorker.js")
+            .then(res => console.log("service worker registered"))
+            .catch(err => console.log("service worker not registered", err))
+    })
 }
