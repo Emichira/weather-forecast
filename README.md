@@ -9,14 +9,14 @@ PS: This weather information will be a determinant if the event will hold or not
 
 #### Technical requirements:
 
-- The website must use Html, CSS, and Javascript(No Javascript Framework)
-- The website must meet PWA criteria i.e
-- Be able to register a service worker and provide offline access to cached weather searches.
-- Must have a web app manifest in order for it to be installed on the user’s device.
-- Must meet the web accessibility guidelines found here https://www.w3.org/WAI/GL/WCAG20/
-- Save weather searches on local storage in order to make the weather results persist on the page when a user reloads.
-- The website must be responsive on all screens.
-- You can audit your website using google lighthouse in your chrome developer tools, in the Audit tab.
+* The website must use Html, CSS, and Javascript(No Javascript Framework)
+* The website must meet PWA criteria i.e
+* Be able to register a service worker and provide offline access to cached weather searches.
+* Must have a web app manifest in order for it to be installed on the user’s device.
+* Must meet the web accessibility guidelines found here https://www.w3.org/WAI/GL/WCAG20/
+* Save weather searches on local storage in order to make the weather results persist on the page when a user reloads.
+* The website must be responsive on all screens.
+* You can audit your website using google lighthouse in your chrome developer tools, in the Audit tab.
 
 #### Built With
 
